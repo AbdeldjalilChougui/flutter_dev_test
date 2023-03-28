@@ -9,19 +9,19 @@ class TableWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Table(
       columnWidths: const {
-        0: FlexColumnWidth(5.5),
-        1: FlexColumnWidth(10),
-        2: FlexColumnWidth(5),
+        0: FlexColumnWidth(1),
+        1: FlexColumnWidth(1),
+        2: FlexColumnWidth(1),
       },
       children: const [
         TableRow(
           children: [
             Padding(
               padding: EdgeInsets.only(bottom: 8),
-              child: Text("الخصم المستحق", style: TextStyle(fontSize: 14, color: Color(0xff353535), fontWeight: FontWeight.w500), textAlign: TextAlign.start,),
+              child: Text("الخصم المستحق", style: TextStyle(fontSize: 14, color: Color(0xff353535), fontWeight: FontWeight.w500), textAlign: TextAlign.center,),
             ),
             Text("السعر", style: TextStyle(fontSize: 14, color: Color(0xff353535), fontWeight: FontWeight.w500), textAlign: TextAlign.center,),
-            Text("الكمية/القطعة", style: TextStyle(fontSize: 14, color: Color(0xff353535), fontWeight: FontWeight.w500), textAlign: TextAlign.end,),
+            Text("الكمية/القطعة", style: TextStyle(fontSize: 14, color: Color(0xff353535), fontWeight: FontWeight.w500), textAlign: TextAlign.center,),
           ],
         ),
         TableRow(
