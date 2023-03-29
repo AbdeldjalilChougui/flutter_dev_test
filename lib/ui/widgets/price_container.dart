@@ -24,7 +24,7 @@ class _PriceContainerState extends State<PriceContainer> {
         children: [
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            crossAxisAlignment: CrossAxisAlignment.end,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               isView! ? Image.asset("assets/icons/down.png").gestures(onTap: () {
                 setState(() {
